@@ -20,6 +20,9 @@
 
 @import "pages/home";
 */
+h1 {
+  color: white; }
+
 body {
   /*font-family: "Century Gothic", "Lato", sans-serif;*/
   font-family: 'Nunito', sans-serif;
@@ -169,6 +172,6 @@ a {
   border-top: none; }
 
 .header {
-  background-color: #ff8500;
+  background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
   height: 10vh;
   width: 90vw; }
