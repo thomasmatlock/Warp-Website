@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "compile:sass": "node-sass sass/main.scss css/style.css -w",
+        "sass": "node-sass sass/main.scss css/style.css -w",
         "liveserver": "live-server",
         "dev": "concurrently --kill-others \"npm run node-sass\" \"npm run live-server\""
     },
