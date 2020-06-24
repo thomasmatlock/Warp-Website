@@ -166,6 +166,8 @@ a {
 
 .btn-1 {
     background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+    width: 10vh;
+    height: 10vh;
 }
 
 .btn-2 {
@@ -201,6 +203,6 @@ a {
 
 .header {
     background-image: $wildfire-background-blue-color-gradient-1;
-    height: 10vh;
-    width: 95vw;
+    height: 11vh;
+    width: 50%;
 }

@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "node-sass": "node-sass sass/main.scss css/style.css -w",
-        "liveserver": "live-server",
+        "live-server": "live-server",
         "dev": "concurrently --kill-others \"npm run node-sass\" \"npm run live-server\""
     },
     "author": "",
