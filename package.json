@@ -11,9 +11,9 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "concurrently": "^5.2.0",
+        "concurrently": "^6.0.0",
         "live-server": "^1.2.1",
-        "node-sass": "^4.12.0"
+        "node-sass": "^5.0.0"
     },
     "dependencies": {}
 }

@@ -1,49 +1,89 @@
 :root {
-  --white: #ffffff;
-  --light: #f0eff3;
-  --black: #000000;
-  --dark-blue: #1f2029;
-  --dark-light: #353746;
-  --red: #da2c4d;
-  --yellow: #f8ab37;
-  --grey: #ecedf3; }
+    --white: #ffffff;
+    --light: #f0eff3;
+    --black: #000000;
+    --dark-blue: #1f2029;
+    --dark-light: #353746;
+    --red: #da2c4d;
+    --yellow: #f8ab37;
+    --grey: #ecedf3;
+}
 
 :root {
-  --white: #ffffff;
-  --light: #f0eff3;
-  --black: #000000;
-  --dark-blue: #1f2029;
-  --dark-light: #353746;
-  --red: #da2c4d;
-  --yellow: #f8ab37;
-  --grey: #ecedf3; }
+    --white: #ffffff;
+    --light: #f0eff3;
+    --black: #000000;
+    --dark-blue: #1f2029;
+    --dark-light: #353746;
+    --red: #da2c4d;
+    --yellow: #f8ab37;
+    --grey: #ecedf3;
+}
+
+
+/* * is universal selector for everything on your page, it applies all block rules to everything inside it*/
+
+*,
+*::after,
+*::before {
+    /*we set this to border-box in body, so then here we ensure every el inherits that unless we specify otherwise*/
+}
 
 html {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-image: linear-gradient(to right, #ef603d 0%, #f77d2a 33%, #fda849 66%, #ffe7a1 100%); }
+    font-size: 62.5%;
+    /* 1 rem = exactly 10px. Very useful for scaling everything else on page in rem*/
+    /*important step2: users often set their own font size, so writing 10px as default font-size is bad practice, so we use percentages
+  default font-size is 16px, so 100% would be 16px
+  so we want 10px, default is 16, we divide 10 by the 16, and our percentage is 62.5%*/
+    background-image: linear-gradient(to left, #0463db 0%, #0b88e6 33%, #13aff2 66%, #19d2fc 100%);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 body {
-  /* everything related we specify in body, not in universal selector
+    box-sizing: border-box;
+}
+
+body {
+    /* everything related we specify in body, not in universal selector
     font props here, usually fonts just inherit everything, so we specify 
     -font family followed by option 1, comma, then option B if A is unavailable
     - lineheight 1.0 is just default line height anything else, ie 1.7 is 70% more than default*/
-  /*font-size: 1.6rem;*/
-  /*font-family: "Century Gothic", "Lato", sans-serif;*/
-  margin: 0 0;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  overflow: hidden;
-  font-family: 'Segoe UI', sans-serif; }
+    /*font-size: 1.6rem;*/
+    /*font-family: "Century Gothic", "Lato", sans-serif;*/
+    margin: 0 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Segoe UI', sans-serif;
+}
 
 h1 {
-  color: white;
-  padding: 5vh; }
+    color: white;
+    padding: 5vh;
+}
 
 a {
-  text-decoration: none;
-  color: white;
-  font-weight: 600; }
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.u-center-text {
+    text-align: center;
+}
+
+.u-margin-bottom-small {
+    margin-bottom: 1.5rem;
+}
+
+.u-margin-bottom-medium {
+    margin-bottom: 4rem;
+}
+
+.u-margin-bottom-big {
+    margin-bottom: 8rem;
+}
