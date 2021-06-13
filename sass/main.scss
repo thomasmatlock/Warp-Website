@@ -12,3 +12,9 @@
 // @import 'layouts/grid';
 // @import 'layouts/header';
 // @import 'pages/home';
+header {
+    height: 60px;
+    width: 100%;
+    border-top: 1px solid white;
+    position: fixed;
+}
