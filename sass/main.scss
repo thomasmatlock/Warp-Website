@@ -12,9 +12,68 @@
 // @import 'layouts/grid';
 // @import 'layouts/header';
 // @import 'pages/home';
+// html,
+// body {
+//     font-family: 'Proxima Nova', 'Roboto', sans-serif;
+//     font-weight: normal;
+//     -webkit-font-smoothing: antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+//     overflow-x: hidden;
+//     font-size: 16px;
+// }
 header {
     height: 60px;
     width: 100%;
-    border-top: 1px solid white;
+    // border-top: 1px solid white;
     position: fixed;
+    // background-color: white;
+}
+
+// header parent
+.header_nav {
+    height: 100%;
+    width: 100%;
+    box-shadow: $shadow-light;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-top: 1px dotted black;
+}
+
+a {
+    color: black;
+}
+
+// left and right
+.header_nav_child {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+.header_nav_child_left {
+    // background-color: yellow;
+    border: 1px solid yellow;
+}
+
+.header_nav_child_right {
+    border: 1px solid purple;
+}
+
+.header_nav_child_item {
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(178, 255, 116);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
 }

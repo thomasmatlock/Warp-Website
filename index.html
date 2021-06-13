@@ -2,71 +2,91 @@
 <html lang="en">
 
 
-    <head>
-        <!-- Facebook Pixel Code -->
-        <script>
-            ! function (f, b, e, v, n, t, s) {
-                if (f.fbq) return;
-                n = f.fbq = function () {
-                    n.callMethod ?
-                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-                };
-                if (!f._fbq) f._fbq = n;
-                n.push = n;
-                n.loaded = !0;
-                n.version = '2.0';
-                n.queue = [];
-                t = b.createElement(e);
-                t.async = !0;
-                t.src = v;
-                s = b.getElementsByTagName(e)[0];
-                s.parentNode.insertBefore(t, s)
-            }(window, document, 'script',
-                'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '1696406540587588');
-            fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display:none"
+<head>
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1696406540587588');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
                 src="https://www.facebook.com/tr?id=1696406540587588&ev=PageView&noscript=1" /></noscript>
-        <!-- End Facebook Pixel Code -->
-        <!-- Google Analytics -->
-        <script>
-            (function (i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    <!-- End Facebook Pixel Code -->
+    <!-- Google Analytics -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-            ga('create', 'UA-98609789-1', 'auto');
-            ga('send', 'pageview');
-        </script>
-        <!-- End Google Analytics -->
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet" />
-        <!-- <link rel="shortcut icon" href="img/favicon2_blue_48x48.ico" type="image/x-icon" /> -->
-        <link rel="shortcut icon" href="img/icon_taskbar.png" type="image/x-icon" />
-        <link rel="stylesheet" href="css/style.css" />
-        <title>Warp | Download anything. Free for PC, Mac, and Linux</title>
-    </head>
+        ga('create', 'UA-98609789-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet" />
+    <!-- <link rel="shortcut icon" href="img/favicon2_blue_48x48.ico" type="image/x-icon" /> -->
+    <link rel="shortcut icon" href="img/icon_taskbar.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Warp | Download anything. Free for PC, Mac, and Linux</title>
+</head>
 
-    <body>
-        <!-- <section class="header">
+<body>
+    <!-- <section class="header">
             <h1 id="title">Warp - download anything and everything.</h1>
             <a href="https://www.patreon.com/file?h=38481869&i=5850224">Try for free</a>
         </section> -->
 
-        <header>
+    <header>
+        <div class="header_nav">
+            <div class="header_nav_child header_nav_child_left">
+                <div class="header_nav_child_item">
 
-        </header>
-    </body>
+                    <a href="#">link 1</a>
+                </div>
+                <div class="header_nav_child_item">
+                    <a href="#">link 1</a>
+                </div>
+            </div>
+            <div class="header_nav_child header_nav_child_right">
+
+                <div class="header_nav_child_item">
+
+                    <a href="#">link 1</a>
+                </div>
+                <div class="header_nav_child_item">
+                    <a href="#">link 1</a>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
 
 </html>
