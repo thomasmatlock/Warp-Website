@@ -1,85 +1,125 @@
-@import 'abstracts/variables';
+// @import 'abstracts/variables';
 @import 'base/base';
 @import 'base/typography';
-@import 'base/utilities';
+// @import 'base/utilities';
 html,
 body {
-    font-family: 'Proxima Nova', 'Roboto', sans-serif;
-    font-weight: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
+    // font-family: 'Proxima Nova', 'Roboto', sans-serif;
+    // font-weight: normal;
+    // -webkit-font-smoothing: antialiased;
+    // -moz-osx-font-smoothing: grayscale;
+    // overflow-x: hidden;
     font-size: 16px;
+    max-width: 72rem;
 }
 
-a {
-    color: rgb(117, 117, 117);
-    // font-size: 12px;
-    &:hover {
-        color: rgb(39, 39, 39);
+// a {
+//     color: rgb(117, 117, 117);
+//     // font-size: 12px;
+//     &:hover {
+//         color: rgb(39, 39, 39);
+//     }
+// }
+.main-nav {
+    height: 60px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    // margin: 0 1.5rem;
+    margin: 0 auto;
+    padding-right: 1.5rem;
+    z-index: 1000;
+    background-color: rgb(214, 214, 214);
+    display: flex;
+    flex-direction: row;
+    &__inner {
+        margin: 0 50px;
+        background-color: rgb(195, 195, 195);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        max-width: 1152px;
+        margin-left: auto;
+        margin-right: auto;
+        &__bar {
+            height: 100%;
+            height: 60px;
+            width: 15rem;
+            border: 1px dotted black;
+            background-color: rgb(170, 170, 170);
+            // flex: 0 1 auto;
+        }
+        &__menu {
+            border: 1px dotted black;
+            display: flex;
+            flex-flow: row nowrap;
+            // flex: 1;
+        }
+    }
+    &__menu__pages {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
     }
 }
 
-header {
-    height: 60px;
-    width: 100%;
-    // border-top: 1px solid white;
-    position: fixed;
-    // background-color: white;
-}
-
-// header parent
-.header_nav {
-    height: 100%;
-    width: 100%;
-    box-shadow: $shadow-light;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    // border: 1px dotted black;
-}
-
-// left and right
-.header_nav_child {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    height: 100%;
-    // width: 100%;
-    // border: 1px solid purple;
-}
-
-.header_nav_child_left {
-    // background-color: rgb(255, 255, 233);
-    margin-left: 60px;
-    width: 70%;
-    // justify-content: flex-start;
-}
-
-.header_nav_child_right {
-    margin-right: 60px;
-    width: 30%;
-}
-
-.header_nav_child_item {
-    height: 100%;
-    width: auto;
-    margin: 0 auto;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    // justify-content: center;
-    // flex: 1;
-}
-
-.header_nav_child_item_logo_container {
-    width: 60px;
-}
-
-.header_nav_child_item_logo {
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
-}
+// // header parent
+// .header_nav {
+//     height: 100%;
+//     width: 100%;
+//     box-shadow: $shadow-light;
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     align-content: center;
+//     justify-content: center;
+//     // border: 1px dotted black;
+// }
+// // left and right
+// .header_nav_child {
+//     display: flex;
+//     align-items: center;
+//     align-content: center;
+//     height: 100%;
+//     // width: 100%;
+//     // border: 1px solid purple;
+// }
+// .header_nav_child_left {
+//     // background-color: rgb(255, 255, 233);
+//     margin-left: 60px;
+//     width: 70%;
+//     // justify-content: flex-start;
+// }
+// .header_nav_child_right {
+//     margin-right: 60px;
+//     width: 30%;
+// }
+// .header_nav_child_item {
+//     height: 100%;
+//     width: auto;
+//     // margin: 0 auto;
+//     margin-left: 2rem;
+//     display: flex;
+//     align-content: center;
+//     align-items: center;
+//     // justify-content: center;
+//     // flex: 1;
+// }
+// .header_nav_child_item_logo_container {
+//     width: 60px;
+// }
+// .header_nav_child_item_logo {
+//     height: 30px;
+//     width: 30px;
+//     cursor: pointer;
+// }
+// footer {
+//     background-color: #eee;
+//     position: absolute;
+//     bottom: 0;
+//     color: rgba(0, 0, 0, 0.65);
+//     height: 200px;
+//     width: 100%;
+// }

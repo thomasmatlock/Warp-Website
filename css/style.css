@@ -2,6 +2,8 @@
 *,
 *::after,
 *::before {
+  margin: 0;
+  padding: 0;
   /*we set this to border-box in body, so then here we ensure every el inherits that unless we specify otherwise*/ }
 
 html {
@@ -27,84 +29,51 @@ body {
     - lineheight 1.0 is just default line height anything else, ie 1.7 is 70% more than default*/
   /*font-size: 1.6rem;*/
   /*font-family: "Century Gothic", "Lato", sans-serif;*/
-  margin: 0 0;
-  height: 100%;
-  width: 100%;
   text-align: center;
   overflow: hidden;
   font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif; }
 
 a {
-  text-decoration: none;
-  color: white; }
-
-.u-center-text {
-  text-align: center; }
-
-.u-margin-bottom-small {
-  margin-bottom: 1.5rem; }
-
-.u-margin-bottom-medium {
-  margin-bottom: 4rem; }
-
-.u-margin-bottom-big {
-  margin-bottom: 8rem; }
+  text-decoration: none; }
 
 html,
 body {
-  font-family: 'Proxima Nova', 'Roboto', sans-serif;
-  font-weight: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
-  font-size: 16px; }
+  font-size: 16px;
+  max-width: 72rem; }
 
-a {
-  color: #757575; }
-  a:hover {
-    color: #272727; }
-
-header {
+.main-nav {
   height: 60px;
+  position: absolute;
+  top: 0;
   width: 100%;
-  position: fixed; }
-
-.header_nav {
-  height: 100%;
-  width: 100%;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
-  justify-content: center; }
-
-.header_nav_child {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  height: 100%; }
-
-.header_nav_child_left {
-  margin-left: 60px;
-  width: 70%; }
-
-.header_nav_child_right {
-  margin-right: 60px;
-  width: 30%; }
-
-.header_nav_child_item {
-  height: 100%;
-  width: auto;
   margin: 0 auto;
+  padding-right: 1.5rem;
+  z-index: 1000;
+  background-color: #d6d6d6;
   display: flex;
-  align-content: center;
-  align-items: center; }
-
-.header_nav_child_item_logo_container {
-  width: 60px; }
-
-.header_nav_child_item_logo {
-  height: 30px;
-  width: 30px;
-  cursor: pointer; }
+  flex-direction: row; }
+  .main-nav__inner {
+    margin: 0 50px;
+    background-color: #c3c3c3;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    max-width: 1152px;
+    margin-left: auto;
+    margin-right: auto; }
+    .main-nav__inner__bar {
+      height: 100%;
+      height: 60px;
+      width: 15rem;
+      border: 1px dotted black;
+      background-color: #aaaaaa; }
+    .main-nav__inner__menu {
+      border: 1px dotted black;
+      display: flex;
+      flex-flow: row nowrap; }
+  .main-nav__menu__pages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center; }

@@ -1,0 +1,34 @@
+    .card {
+    // FUNCTIONALITY
+    perspective: 150rem; // the lower the value the more dramatic the effect, ie 15rem is super pronounced/wonky
+    -moz-perspective: 150rem; // mozilla version of above
+    position: relative;
+    height: 52rem;
+    &__side {
+        height: 52rem;
+        transition: all .8s ease;
+        position: absolute; // the card sides stack vertically, but we stack them on top of each other with absolute position, then top/left both 0
+        top: 0;
+        left: 0;
+        width: 100%; // consume entire column width
+        backface-visibility: hidden; // IMPORTANT, basically makes element backside invisible
+        border-radius: 3px;
+        box-shadow: $shadow-light;
+        overflow: hidden; // hides the front side image corners from not being rounded using border radius
+        &--front {
+            background-color: $color-white;
+        }
+        &--back {
+            background-color: $color-primary;
+            transform: rotateY(180deg); // reverses the backside initially but on hover rotates it to face us, while front reverses to face away
+            &-1 {
+                background-image: linear-gradient(to bottom right, $color-secondary-light, $color-secondary-dark);
+            }
+            &-2 {
+                background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
+            }
+            &-3 {
+                background-image: linear-gradient(to bottom right, $color-tertiary-light, $color-tertiary-dark);
+            }
+        }
+    }
