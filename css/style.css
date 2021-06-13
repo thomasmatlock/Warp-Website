@@ -93,16 +93,24 @@ header {
   width: 100%; }
 
 .header_nav_child_left {
+  margin-left: 60px;
   justify-content: flex-start; }
 
 .header_nav_child_right {
+  margin-right: 60px;
   justify-content: flex-end; }
 
 .header_nav_child_item {
   height: 100%;
   width: 100%;
-  border: 1px dotted #9b9b9b;
   display: flex;
   align-content: center;
   align-items: center;
   justify-content: center; }
+
+.header_nav_child_item_logo_container {
+  width: 60px; }
+
+.header_nav_child_item_logo {
+  height: 30px;
+  cursor: pointer; }

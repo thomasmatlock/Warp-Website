@@ -61,10 +61,12 @@ header {
 
 .header_nav_child_left {
     // background-color: rgb(255, 255, 233);
+    margin-left: 60px;
     justify-content: flex-start;
 }
 
 .header_nav_child_right {
+    margin-right: 60px;
     // background-color: rgb(233, 255, 234);
     justify-content: flex-end;
     // border: 1px solid purple;
@@ -74,10 +76,19 @@ header {
     height: 100%;
     width: 100%;
     // border: 1px solid rgb(178, 255, 116);
-    border: 1px dotted rgb(155, 155, 155);
+    // border: 1px dotted rgb(155, 155, 155);
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
     // flex: 1;
+}
+
+.header_nav_child_item_logo_container {
+    width: 60px;
+}
+
+.header_nav_child_item_logo {
+    height: 30px;
+    cursor: pointer;
 }
