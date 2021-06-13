@@ -76,4 +76,10 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    align-content: center; }
+    align-content: center;
+    list-style-type: none;
+    /* Remove bullets */
+    padding: 0;
+    /* Remove padding */
+    margin: 0;
+    /* Remove margins */ }
