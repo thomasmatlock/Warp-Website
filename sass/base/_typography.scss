@@ -29,17 +29,17 @@ body {
     width: 100%;
     text-align: center;
     overflow: hidden;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+    // font-family: 'Segoe UI', sans-serif;
 }
 
-h1 {
-    color: white;
-    padding: 5vh;
-}
-
+// h1 {
+//     color: white;
+//     padding: 5vh;
+// }
 // remove all underline, etc, from anchor tags, so links aren't underlined
 a {
     text-decoration: none;
     color: white;
-    font-weight: 600;
+    // font-weight: 600;
 }
