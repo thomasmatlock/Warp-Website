@@ -80,29 +80,29 @@ header {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
   border: 1px dotted black; }
 
 .header_nav_child {
   display: flex;
   align-items: center;
   align-content: center;
-  flex: 1;
   height: 100%;
   width: 100%; }
 
 .header_nav_child_left {
-  background-color: #ffffe9;
   justify-content: flex-start; }
 
 .header_nav_child_right {
-  background-color: #e9ffea;
   justify-content: flex-end; }
 
 .header_nav_child_item {
   height: 100%;
   width: 100%;
+  border: 1px dotted #9b9b9b;
   display: flex;
   align-content: center;
   align-items: center;
-  justify-content: center;
-  flex: 1; }
+  justify-content: center; }
